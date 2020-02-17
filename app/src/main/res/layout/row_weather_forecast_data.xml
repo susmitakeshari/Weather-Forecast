@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/grey_300"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/txt_date"
+                android:text="date"
+                android:textSize="18sp"
+                android:textColor="#046e18"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:visibility="gone"
+                android:src="@drawable/icon"
+                android:id="@+id/imageView"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgWeatherType"
+                        android:text="Morning"
+                        android:textColor="#03115F"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/img_Morning"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/txtCityName"
+                        android:layout_marginTop="10dp" />
+                    <TextView
+                        android:id="@+id/temp_Morning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgWeatherType"
+                        android:text="30"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgWeatherType"
+                        android:text="Afternoon"
+                        android:textColor="#03115F"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/img_Afternoon"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/txtCityName"
+                        android:layout_marginTop="10dp" />
+                    <TextView
+                        android:id="@+id/temp_Afternoon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgWeatherType"
+                        android:text="30"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgWeatherType"
+                        android:text="Evening"
+                        android:textColor="#03115F"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/img_Evening"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/txtCityName"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/cloudy" />
+                    <TextView
+                        android:id="@+id/temp_Evening"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgWeatherType"
+                        android:text="30"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgWeatherType"
+                        android:text="Night"
+                        android:textColor="#03115F"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/img_Night"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/txtCityName"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/cloudy" />
+                    <TextView
+                        android:id="@+id/temp_Night"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgWeatherType"
+                        android:text="30"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:visibility="gone"
+                android:text="temp"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:id="@+id/textView"
+                android:textColor="#03115F"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:text="description"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:id="@+id/des"
+                android:textColor="#03115F"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

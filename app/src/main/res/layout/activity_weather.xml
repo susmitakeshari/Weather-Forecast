@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="task.susmita.example.com.wheatherproject.weather">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="#058409"
+            android:id="@+id/txtCityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Your City"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="@dimen/header_text" />
+        <TextView
+            android:text="5 DAYS WEATHER FORECAST"
+            android:textSize="24sp"
+            android:textColor="#046e18"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <AdapterViewFlipper
+                android:layout_margin="10dp"
+                android:id="@+id/adapterViewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+            </AdapterViewFlipper>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:text="Today WEATHER FORECAST"
+                android:textSize="24sp"
+                android:textColor="#046e18"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#058409"
+                android:id="@+id/txt_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTemperature"
+                android:layout_marginTop="10dp"
+                android:text="2:15PM"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/small_text"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgWeatherType"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txtCityName"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/cloudy" />
+
+            <TextView
+                android:id="@+id/txtTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgWeatherType"
+                android:layout_marginTop="10dp"
+                android:text="30"
+                android:textSize="@dimen/large_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTemperature"
+                android:layout_marginTop="10dp"
+                android:text="2:15PM"
+                android:textSize="@dimen/small_text"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
